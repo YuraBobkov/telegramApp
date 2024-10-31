@@ -1,0 +1,24 @@
+# Создаем новый проект
+mkdir telegram-payment-app
+cd telegram-payment-app
+
+# Инициализируем проект
+npm init -y
+
+# Устанавливаем необходимые зависимости
+npm install express dotenv mongodb mongoose telegraf cors
+npm install -D nodemon typescript @types/node @types/express
+
+# Создаем базовую структуру проекта
+mkdir src
+mkdir src/controllers
+mkdir src/models
+mkdir src/routes
+mkdir src/services
+mkdir src/config
+
+# Создаем директорию для фронтенда
+mkdir client
+cd client
+npm install @types/react @types/react-dom @types/react-router-dom @emotion/react @emotion/styled @mui/material @mui/icons-material
+npm install --save-dev @types/node

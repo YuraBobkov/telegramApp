@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ панель - Управление сервисами</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Управление сервисами</h1>
+
+      <div class="form-container">
+        <h2>Добавить новый сервис</h2>
+        <form id="serviceForm">
+          <input type="text" id="name" placeholder="Название сервиса" required />
+          <textarea id="description" placeholder="Описание" required></textarea>
+          <input type="number" id="price" placeholder="Цена" required />
+          <input type="text" id="category" placeholder="Категория" required />
+          <input type="text" id="icon" placeholder="URL иконки" required />
+          <button type="submit">Добавить сервис</button>
+        </form>
+      </div>
+
+      <div class="services-container">
+        <h2>Список сервисов</h2>
+        <div id="servicesList"></div>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>
